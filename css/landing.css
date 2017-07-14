@@ -1,6 +1,24 @@
+/* Font */
+@font-face {
+  font-family: "Pixel";
+  src: url("/fonts/pixel/Beef'd.ttf");
+}
+
+@font-face {
+  font-family: "Arcade";
+  src: url("/fonts/arcade/ARCADE.ttf");
+}
+
 .landing-title {
-  font-size: 80px;
+  font-size: 50px;
   text-align: center;
+  font-family: "Pixel", ChicagoFLF, Krungthep, Silom, monospace;
+}
+
+.landing-description{
+  font-family: "Arcade", ChicagoFLF, Krungthep, Silom, monospace;
+  font-size: 25px;
+  margin: 20px;
 }
 
 /* Links */
@@ -9,6 +27,7 @@ a:focus,
 a:hover {
   color: #fff;
 }
+
 
 /* Custom default button */
 .btn-default,
@@ -19,7 +38,6 @@ a:hover {
   background-color: #fff;
   border: 1px solid #fff;
 }
-
 
 /*
  * Base structure
@@ -33,6 +51,21 @@ body {
 body {
   color: #fff;
   text-align: center;
+}
+
+/*Facebok, Twitter etc*/
+.social {
+  margin: 10px;
+  font-family: "Arcade";
+  font-size: 20px;
+}
+
+footer{
+  display: block;
+  left:0;
+  bottom:0;
+  width: 100%;
+  padding: 10px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -73,6 +106,8 @@ body {
 
 .cover {
   padding: 0 20px;
+  font-size: 50px;
+  font-family: "Pixel";
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -80,9 +115,13 @@ body {
 }
 .btn-left {
   margin-right:10px;
+  margin-top:10px;
+  margin-bottom: 10px;
 }
 .btn-right{
   margin-left:10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 
