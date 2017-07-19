@@ -13,12 +13,14 @@
   font-size: 50px;
   text-align: center;
   font-family: "Pixel", ChicagoFLF, Krungthep, Silom, monospace;
+  margin: 50px;
 }
 
 .landing-description{
   font-family: "Arcade", ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 25px;
-  margin: 20px;
+  color: navy;
+  margin: 50px;
 }
 
 /* Links */
@@ -51,6 +53,14 @@ body {
 body {
   color: #fff;
   text-align: center;
+  border: 50px solid gray;
+  background-image: url("/img/u.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: absolute;
+  background-size: 180px 180px;
+  overflow: auto;
+  position: absolute;
 }
 
 /*Facebok, Twitter etc*/
@@ -58,6 +68,7 @@ body {
   margin: 10px;
   font-family: "Arcade";
   font-size: 20px;
+  color: navy;
 }
 
 footer{
@@ -66,6 +77,8 @@ footer{
   bottom:0;
   width: 100%;
   padding: 10px;
+  overflow: auto;
+  position: absolute;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -108,20 +121,22 @@ footer{
   padding: 0 20px;
   font-size: 50px;
   font-family: "Pixel";
+  overflow: auto;
+  color: navy;
 }
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
 }
 .btn-left {
-  margin-right:10px;
-  margin-top:10px;
-  margin-bottom: 10px;
+  left: -10rem;
+  bottom: -15rem;
+  position: relative;
 }
 .btn-right{
-  margin-left:10px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  right:-10rem;
+  bottom: -15rem;
+  position: relative;
 }
 
 
