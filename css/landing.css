@@ -29,15 +29,75 @@
   height: 2rem;
   background: red;
   position: relative;
+  float: left;
   animation: chgrgb 10s linear infinite alternate, chgpos 30s ease-in-out infinite alternate;
 }
 
-@keyframes chgrgb{
+.square2 {
+  width: 2rem;
+  height: 2rem;
+  background: blue;
+  position: relative;
+  float: right;
+  animation: chgbgr 10s linear infinite alternate, chgpos2 25s ease-in-out infinite alternate;
+}
+
+.square3 {
+  width: 2rem;
+  height: 2rem;
+  background: green;
+  position: relative;
+  float:right;
+  animation: chggrb 10s linear infinite alternate, chgpos2 12s ease-in-out infinite alternate;
+}
+
+.square4 {
+  width: 2rem;
+  height: 2rem;
+  background: blue;
+  position: relative;
+  float: left;
+  animation: chggrb 15s linear infinite reverse, chgpos 15s ease-in-out infinite alternate;
+}
+.square5 {
+  width: 2rem;
+  height: 2rem;
+  background: blue;
+  position: relative;
+  left: -20rem;
+  top: -10rem;
+  animation: chgrgb 15s linear infinite reverse, chgpos 50s ease-in-out infinite alternate;
+}
+.square6 {
+  width: 2rem;
+  height: 2rem;
+  background: red;
+  position: relative;
+  float: right;
+  animation: chgrgb 10s linear infinite alternate, chgpos2 60s ease-in-out infinite alternate;
+}
+
+@keyframes chgbgr{
   0% {background: red;}
   25% {background:orange;}
   50% {background:yellow;}
   75% {background: green;}
   100% {background:blue;}
+}
+@keyframes chggrb{
+  0% {background: green;}
+  25% {background:red;}
+  50% {background:yellow;}
+  75% {background: blue;}
+  100% {background:fuchsia;}
+}
+
+@keyframes chgrgb{
+  0% {background: blue;}
+  25% {background:purple;}
+  50% {background:fuchsia;}
+  75% {background: red;}
+  100% {background:orange;}
 }
 
 @keyframes chgpos{
@@ -45,7 +105,15 @@
   25% {left: 400px; top: 200px;}
   50% {left: 100px; top: -150px;}
   75% {left: -20px; top: -100px;}
-  100% {left: -15; top: 300px;}
+  100% {left: -15px; top: 300px;}
+}
+
+@keyframes chgpos2{
+  0% {left: 0px; top: 0px;}
+  25% {left: -100px; top: 200px;}
+  50% {left: -400px; top: -250px;}
+  75% {left: 10px; top: 150px;}
+  100% {left: 25px; top: 150px;}
 }
 
 /* Links */
