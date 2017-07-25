@@ -78,26 +78,26 @@
 }
 
 @keyframes chgbgr{
-  0% {background: red;}
-  25% {background:orange;}
-  50% {background:yellow;}
-  75% {background: green;}
-  100% {background:blue;}
+  0% {background: #EC5958;}
+  25% {background:#EFA02E;}
+  50% {background:#EFE564;}
+  75% {background: #8BCFB7;}
+  100% {background:#91B0DC;}
 }
 @keyframes chggrb{
-  0% {background: green;}
-  25% {background:red;}
-  50% {background:yellow;}
-  75% {background: blue;}
-  100% {background:fuchsia;}
+  0% {background: #8BCFB7;}
+  25% {background:#83D2E6;}
+  50% {background:#EC5958;}
+  75% {background: #69BAE8;}
+  100% {background:#C1A9D2;}
 }
 
 @keyframes chgrgb{
-  0% {background: blue;}
-  25% {background:purple;}
-  50% {background:fuchsia;}
-  75% {background: red;}
-  100% {background:orange;}
+  0% {background: #69BAE8;}
+  25% {background:#B357A1;}
+  50% {background:#F06498;}
+  75% {background: #91B0DC;}
+  100% {background:#D7EACF;}
 }
 
 @keyframes chgpos{
@@ -170,7 +170,6 @@ footer{
   bottom:0;
   width: 100%;
   padding: 10px;
-  overflow: auto;
   position: absolute;
 }
 
@@ -214,24 +213,61 @@ footer{
   padding: 0 20px;
   font-size: 50px;
   font-family: "Pixel";
-  overflow: auto;
   color: navy;
 }
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
+  display: inline-block;
 }
 .btn-left {
-  left: -10rem;
+  left: -15rem;
   bottom: -15rem;
   position: relative;
 }
 .btn-right{
-  right:-10rem;
+  right:-15rem;
   bottom: -15rem;
   position: relative;
 }
 
+.btn-date {
+  font-size: 20px;
+  font-family: "Arcade";
+}
+
+.btn-description{
+  font-size: 25px;
+  font-family: "Arcade";
+}
+
+.date-l{
+  position: relative;
+  bottom: -15rem;
+  left: -15rem;
+  display: inline-block;
+}
+
+.date-r {
+  position: relative;
+  bottom: -15rem;
+  right: -15.5rem;
+  display: inline-block;
+}
+
+.dscr-l {
+  display: inline-block;
+  position: relative;
+  bottom: -15rem;
+  left: -9.5rem;
+}
+
+.dscr-r{
+  display: inline-block;
+  position: relative;
+  bottom: -15rem;
+  right: -8rem;
+}
 
 /*
  * Affix and center
