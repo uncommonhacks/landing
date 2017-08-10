@@ -28,8 +28,9 @@
   width: 2rem;
   height: 2rem;
   background: red;
-  position: relative;
+  position: absolute;
   float: left;
+  overflow:hidden;
   animation: chgrgb 10s linear infinite alternate, chgpos 30s ease-in-out infinite alternate;
 }
 
@@ -37,8 +38,9 @@
   width: 2rem;
   height: 2rem;
   background: blue;
-  position: relative;
+  position: absolute;
   float: right;
+  overflow:hidden;
   animation: chgbgr 10s linear infinite alternate, chgpos2 25s ease-in-out infinite alternate;
 }
 
@@ -46,8 +48,9 @@
   width: 2rem;
   height: 2rem;
   background: green;
-  position: relative;
+  position: absolute;
   float:right;
+  overflow:hidden;
   animation: chggrb 10s linear infinite alternate, chgpos2 12s ease-in-out infinite alternate;
 }
 
@@ -55,25 +58,28 @@
   width: 2rem;
   height: 2rem;
   background: blue;
-  position: relative;
+  position: absolute;
   float: left;
+  overflow:hidden;
   animation: chggrb 15s linear infinite reverse, chgpos 15s ease-in-out infinite alternate;
 }
 .square5 {
   width: 2rem;
   height: 2rem;
   background: blue;
-  position: relative;
+  position: absolute;
   left: -20rem;
   top: -10rem;
+  overflow:hidden;
   animation: chgrgb 15s linear infinite reverse, chgpos 50s ease-in-out infinite alternate;
 }
 .square6 {
   width: 2rem;
   height: 2rem;
   background: red;
-  position: relative;
+  position: absolute;
   float: right;
+  overflow:hidden;
   animation: chgrgb 10s linear infinite alternate, chgpos2 60s ease-in-out infinite alternate;
 }
 
@@ -101,19 +107,19 @@
 }
 
 @keyframes chgpos{
-  0% {left: 0px; top: 0px;}
-  25% {left: 400px; top: 200px;}
-  50% {left: 100px; top: -150px;}
-  75% {left: -20px; top: -100px;}
-  100% {left: -15px; top: 300px;}
+  0% {left:50%; top: 100%;}
+  25% {left: 95%; top: 20%;}
+  50% {left: 90%; top: 75%;}
+  75% {left: 75%; top: 90%;}
+  100% {left: 20%; top: 30%;}
 }
 
 @keyframes chgpos2{
-  0% {left: 0px; top: 0px;}
-  25% {left: -100px; top: 200px;}
-  50% {left: -400px; top: -250px;}
-  75% {left: 10px; top: 150px;}
-  100% {left: 25px; top: 150px;}
+  0% {left:50%; top: 100%;}
+  25% {left: 5%; top: 80%;}
+  50% {left: 40%; top: 25%;}
+  75% {left: 70%; top: 15%;}
+  100% {left: 25%; top: 70%;}
 }
 
 /* Links */
@@ -138,27 +144,35 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
+html {
   height: 100%;
-  background-color: #333;
+  overflow: auto;
+  color: gray;
 }
 body {
   color: #fff;
   text-align: center;
   border: 50px solid gray;
-  background-image: url("/img/u.jpg");
+/*  background-image: url("/img/u.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: absolute;
+  background-attachment: local;
   background-size: 180px 180px;
+*/  height:100%;
   overflow: auto;
   position: absolute;
 }
 
+#u {
+  position: relative;
+  bottom: 50%;
+  height: 15rem;
+  width:15rem;
+}
+
 /*Facebok, Twitter etc*/
 .social {
-  margin: 10px;
+  margin:40px;
   font-family: "Arcade";
   font-size: 20px;
   color: navy;
@@ -166,11 +180,10 @@ body {
 
 footer{
   display: block;
-  left:0;
-  bottom:0;
   width: 100%;
   padding: 10px;
-  position: absolute;
+  position: relative;
+  bottom:-10rem;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -221,13 +234,13 @@ footer{
   display: inline-block;
 }
 .btn-left {
-  left: -15rem;
-  bottom: -15rem;
+  left: -13rem;
+  bottom: -5rem;
   position: relative;
 }
 .btn-right{
   right:-15rem;
-  bottom: -15rem;
+  bottom: -5rem;
   position: relative;
 }
 
@@ -243,14 +256,14 @@ footer{
 
 .date-l{
   position: relative;
-  bottom: -15rem;
-  left: -15rem;
+  bottom: -5rem;
+  left: -13rem;
   display: inline-block;
 }
 
 .date-r {
   position: relative;
-  bottom: -15rem;
+  bottom: -5rem;
   right: -15.5rem;
   display: inline-block;
 }
@@ -258,14 +271,14 @@ footer{
 .dscr-l {
   display: inline-block;
   position: relative;
-  bottom: -15rem;
-  left: -9.5rem;
+  bottom: -5rem;
+  left: -7rem;
 }
 
 .dscr-r{
   display: inline-block;
   position: relative;
-  bottom: -15rem;
+  bottom: -5rem;
   right: -8rem;
 }
 
