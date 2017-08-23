@@ -9,18 +9,28 @@
   src: url("/fonts/pcbius/PCBius.ttf");
 }
 
+.buttonz {
+  font-family: "Pixel", ChicagoFLF, Krungthep, Silom, monospace;
+}
+
+.main-stuff{
+  margin-bottom: 5%;
+}
+
 .landing-title {
   font-size: 250%;
   text-align: center;
   font-family: "Pixel", ChicagoFLF, Krungthep, Silom, monospace;
-  margin: 4%;
+  margin-top: 4%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 .landing-description{
   font-family: "Arcade", ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 150%;
   color: navy;
-  margin-bottom: 4%;
+  margin: 4%;
 }
 
 .btn-data {
@@ -160,13 +170,12 @@ a:hover {
 
 html {
   height: 100%;
-  overflow: auto;
   color: gray;
 }
+
 body {
   color: #fff;
   text-align: center;
-  border: 5rem solid #5E5E5F;
   height:100%;
   overflow: auto;
   position: absolute;
