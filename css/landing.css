@@ -44,7 +44,7 @@
 }
 
 /*Animation*/
-.square {
+/*.square {
   opacity:0.7;
   width: 2rem;
   height: 2rem;
@@ -105,9 +105,9 @@
   float: right;
   overflow:hidden;
   animation: chgrgb 10s linear infinite alternate, chgpos2 60s ease-in-out infinite alternate;
-}
+}*/
 
-@keyframes chgbgr{
+/*@keyframes chgbgr{
   0% {background: #EC5958;}
   25% {background:#EFA02E;}
   50% {background:#EFE564;}
@@ -144,7 +144,7 @@
   50% {left: 60%; top: 25%;}
   75% {left: 20%; top: 15%;}
   100% {left: 55%; top: 75%;}
-}
+}*/
 
 /* Links */
 a,
@@ -198,4 +198,10 @@ footer{
   display: block;
   width: 100%;
   bottom:0em;
+}
+
+.gradient {
+	background: linear-gradient(transparent 60%, rgba(0, 0, 0, 0.7)),
+		linear-gradient(to right, transparent 30%, rgba(09,11,100, 0.8) 70%) 
+		rgba(15,219,255,1); 
 }

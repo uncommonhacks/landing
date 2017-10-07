@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="80px" viewBox="0 0 148 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-202.000000, -201.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="cloud" transform="translate(202.000000, 200.638909)">
+                <rect id="Rectangle-path" x="0.419566102" y="44.9669969" width="147.571887" height="34.6876274" rx="17.3438137"></rect>
+                <circle id="Oval" cx="59.4420274" cy="34.6876274" r="34.0268108"></circle>
+                <circle id="Oval" cx="105.2062" cy="34.8030081" r="20.2021078"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

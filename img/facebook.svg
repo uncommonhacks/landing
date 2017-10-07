@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="28px" viewBox="0 0 15 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>F_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-422.000000, -556.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Group-7" transform="translate(363.000000, 130.000000)">
+                <g id="Group-6" transform="translate(59.000000, 426.000000)">
+                    <g id="F_icon">
+                        <path d="M9.75896238,27.1756729 L9.75896238,14.9137654 L13.8746867,14.9137654 L14.4909581,10.1350825 L9.75896238,10.1350825 L9.75896238,7.08419542 C9.75896238,5.70065645 10.1431491,4.75782029 12.1271103,4.75782029 L14.6575577,4.75671454 L14.6575577,0.482622215 C14.2199265,0.424386049 12.7178265,0.294276132 10.9702501,0.294276132 C7.32188939,0.294276132 4.824123,2.52125663 4.824123,6.61093442 L4.824123,10.1350825 L0.697832594,10.1350825 L0.697832594,14.9137654 L4.824123,14.9137654 L4.824123,27.1756729 L9.75896238,27.1756729 Z" id="f"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
