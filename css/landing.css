@@ -14,28 +14,53 @@ body {
 }
 
 .header {
-  font-family: "Beff'd", ChicagoFLF, Krungthep, Silom, monospace;
+  font-family: "Beef'd", ChicagoFLF, Krungthep, Silom, monospace;
   font-size: 250%;
   text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .side {
   color: white;
   height:100%;
   width:50%;
+  padding: 10% 5%;
 }
 
 #hack-side {
-  float:left;
-  background-color: #82EAFF;
+  float:right;
+  background-color: #FFA375;  
 }
 
 #make-side {
-  float:right;
-  background-color: #FFA375;
+  float:left;
+  background-color: #82EAFF;  
 }
 
-.text {
+.txt {
   font-family: CamphorStd-Regular;
   text-align: center;
+  font-size: 200%;
+  margin-bottom: 4rem;
 }
+
+.info {
+  font-family: CamphorStd-Regular;
+  text-align: center;
+  font-size: 150%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.nav {
+  font-family: CamphorStd-Regular; 
+  text-decoration: none;
+  display:inline;
+  font-size: 120%;
+}
+
+#nav-bar{
+  width:100%;
+}
+
