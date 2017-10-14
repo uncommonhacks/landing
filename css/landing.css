@@ -1,172 +1,8 @@
 /* Font */
 @font-face {
-  font-family: "Pixel";
-  src: url("/fonts/pixel/Beef'd.ttf");
+  font-family: "Beef'd";
+  src: url("/fonts/Beef'd.ttf");
 }
-
-@font-face {
-  font-family: "Arcade";
-  src: url("/fonts/pcbius/PCBius.ttf");
-}
-
-.buttonz {
-  font-family: "Pixel", ChicagoFLF, Krungthep, Silom, monospace;
-}
-
-.main-stuff{
-  margin-bottom: 5%;
-}
-
-.landing-title {
-  font-size: 250%;
-  text-align: center;
-  font-family: "Pixel", ChicagoFLF, Krungthep, Silom, monospace;
-  margin-top: 4%;
-  margin-left: 4%;
-  margin-right: 4%;
-}
-
-.landing-description{
-  font-family: "Arcade", ChicagoFLF, Krungthep, Silom, monospace;
-  font-size: 150%;
-  color: navy;
-  margin: 4%;
-}
-
-.btn-data {
-  font-family: "Arcade", ChicagoFLF, Krungthep, Silom, monospace;
-  font-size: 110%;
-}
-
-.btn-description {
-  font-family: "Arcade", ChicagoFLF, Krungthep, Silom, monospace;
-  font-size: 150%;
-}
-
-/*Animation*/
-.square {
-  opacity:0.7;
-  width: 2rem;
-  height: 2rem;
-  background: red;
-  position: absolute;
-  float: left;
-  overflow:hidden;
-  animation: chgrgb 10s linear infinite alternate, chgpos 30s ease-in-out infinite alternate;
-}
-
-.square2 {
-  opacity: 0.7;
-  width: 2rem;
-  height: 2rem;
-  background: blue;
-  position: absolute;
-  float: right;
-  overflow:hidden;
-  animation: chgbgr 10s linear infinite alternate, chgpos2 25s ease-in-out infinite alternate;
-}
-
-.square3 {
-  opacity: 0.7;
-  width: 2rem;
-  height: 2rem;
-  background: green;
-  position: absolute;
-  float:right;
-  overflow:hidden;
-  animation: chggrb 10s linear infinite alternate, chgpos2 12s ease-in-out infinite alternate;
-}
-
-.square4 {
-  opacity:0.7;
-  width: 2rem;
-  height: 2rem;
-  background: blue;
-  position: absolute;
-  float: left;
-  overflow:hidden;
-  animation: chggrb 15s linear infinite reverse, chgpos 15s ease-in-out infinite alternate;
-}
-.square5 {
-  opacity: 0.7;
-  width: 2rem;
-  height: 2rem;
-  background: blue;
-  position: absolute;
-  overflow:hidden;
-  animation: chgrgb 15s linear infinite reverse, chgpos 50s ease-in-out infinite alternate;
-}
-.square6 {
-  opacity: 0.7;
-  width: 2rem;
-  height: 2rem;
-  background: red;
-  position: absolute;
-  float: right;
-  overflow:hidden;
-  animation: chgrgb 10s linear infinite alternate, chgpos2 60s ease-in-out infinite alternate;
-}
-
-@keyframes chgbgr{
-  0% {background: #EC5958;}
-  25% {background:#EFA02E;}
-  50% {background:#EFE564;}
-  75% {background: #8BCFB7;}
-  100% {background:#91B0DC;}
-}
-@keyframes chggrb{
-  0% {background: #8BCFB7;}
-  25% {background:#83D2E6;}
-  50% {background:#EC5958;}
-  75% {background: #69BAE8;}
-  100% {background:#C1A9D2;}
-}
-
-@keyframes chgrgb{
-  0% {background: #69BAE8;}
-  25% {background:#B357A1;}
-  50% {background:#F06498;}
-  75% {background: #91B0DC;}
-  100% {background:#D7EACF;}
-}
-
-@keyframes chgpos{
-  0% {left:50%; top: 50%;}
-  25% {left: 70%; top: 20%;}
-  50% {left: 30%; top: 55%;}
-  75% {left: 55%; top: 75%;}
-  100% {left: 80%; top: 30%;}
-}
-
-@keyframes chgpos2{
-  0% {left:50%; top: 50%;}
-  25% {left: 15%; top: 70%;}
-  50% {left: 60%; top: 25%;}
-  75% {left: 20%; top: 15%;}
-  100% {left: 55%; top: 75%;}
-}
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-/*
- * Base structure
- */
 
 html {
   height: 100%;
@@ -174,28 +10,32 @@ html {
 }
 
 body {
-  color: #fff;
-  text-align: center;
   height:100%;
-  overflow: auto;
-  position: absolute;
 }
 
-#u {
-  height: 25rem;
-  width:25rem;
+.header {
+  font-family: "Beff'd", ChicagoFLF, Krungthep, Silom, monospace;
+  font-size: 250%;
+  text-align: center;
 }
 
-/*Facebok, Twitter etc*/
-.social {
-  margin:4rem;
-  font-family: "Arcade";
-  font-size: 100%;
-  color: navy;
+.side {
+  color: white;
+  height:100%;
+  width:50%;
 }
 
-footer{
-  display: block;
-  width: 100%;
-  bottom:0em;
+#hack-side {
+  float:left;
+  background-color: #82EAFF;
+}
+
+#make-side {
+  float:right;
+  background-color: #FFA375;
+}
+
+.text {
+  font-family: CamphorStd-Regular;
+  text-align: center;
 }
