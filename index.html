@@ -7,17 +7,40 @@
     <link  href="css/landing.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="make-side" class="side">
-      <p class="header">Make</p>
-      <p id="hack-txt" class="txt">one day build and create</p>
-      <p class="info">November 18, 2017<br>Polsky Center, Chicago</p>      
+      <div class="info-wrapper">
+        <div class="always-visible">
+          <p class="header">Make</p>
+          <p id="hack-txt" class="txt">one day build and create</p>
+        </div>
+        <div id="make-back-side">
+        </div>
+        <div class="toggle-info" id="make">
+          <div class="divider"> </div>
+          <p class="info">November 18, 2017<br>Polsky Center, Chicago</p> 
+        </div>
+      </div>     
     </div>
     <div id="hack-side" class="side">
-      <p class="header">Hack</p>
-      <p id="hack-txt" class="txt">two day MLH hackathon</p>
-      <p class="info">Februrary 10-11, 2018<br>Polsky Center, Chicago</p>
+      <div class="info-wrapper">
+        <div class="always-visible">
+          <p class="header">Hack</p>
+          <p id="hack-txt" class="txt">two day MLH hackathon</p>
+        </div>
+        <div id="hack-back-side">
+        </div>
+        <div class="toggle-info" id="hack">
+          <div class="divider"> </div>
+          <p class="info">February 10-11, 2018<br>Polsky Center, Chicago</p>
+        </div>
+      </div>
     </div>
     <div id="nav-bar">
       <a class="nav">about</a>
@@ -25,6 +48,10 @@
       <a class="nav">blog</a>
       <a class="nav">past sites</a>
       <a class="nav">sign up<a/>
+      <div class="social-media">
+        <a> <img class="facebook" src="img/facebook.svg"/> </a>
+        <a> <img class="twitter" src="img/twitter.svg"/> </a>
+      </div>
     </div>
     <script src="js/moving.js"></script>    
   </body>

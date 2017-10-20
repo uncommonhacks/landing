@@ -15,52 +15,133 @@ body {
 
 .header {
   font-family: "Beef'd", ChicagoFLF, Krungthep, Silom, monospace;
-  font-size: 250%;
+  font-size: 400%;
   text-align: center;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  z-index: 100;
 }
 
 .side {
+  cursor: pointer;
   color: white;
   height:100%;
   width:50%;
   padding: 10% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#make-back-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  color: white;
+  height: 100%;
+  width: 50%;
+  background: #82EAFF;
+  z-index: 1;
+}
+
+#hack-back-side {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  cursor: pointer;
+  color: white;
+  height: 100%;
+  width: 50%;
+  background: #FFA373;
+  z-index: 1;
 }
 
 #hack-side {
   float:right;
-  background-color: #FFA375;  
+  background-color: #A8E479;  
 }
 
 #make-side {
   float:left;
-  background-color: #82EAFF;  
+  background-color: #a37cee;  
 }
 
 .txt {
-  font-family: CamphorStd-Regular;
+  font-family: Montserrat, sans-serif;
   text-align: center;
   font-size: 200%;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  z-index: 100;
 }
 
 .info {
-  font-family: CamphorStd-Regular;
+  font-family: Montserrat, sans-serif;
   text-align: center;
   font-size: 150%;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 .nav {
-  font-family: CamphorStd-Regular; 
+  font-family: Montserrat, sans-serif;
   text-decoration: none;
   display:inline;
-  font-size: 120%;
+  font-size: 130%;
+  font-weight: 300;
+  cursor: pointer;
+  color: white;
+  font-weight: 300;
+  margin-right: 20px;
 }
 
 #nav-bar{
-  width:100%;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.10);
+  border-top: solid 1px white;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+}
+
+.divider {
+  border: solid 1px;
+  width: 60px;
+  text-align: center;
+  margin: 0 auto 3.5rem;
+}
+
+.social-media {
+  right: 40px;
+  position: absolute;
+}
+
+.facebook {
+  margin-right: 7px;
+  height: 30px;
+}
+
+.twitter {
+  height: 30px;
+}
+
+#make, #hack {
+  display: none;
+}
+
+.always-visible {
+  position: relative;
+  z-index: 10;
+}
+
+.toggle-info {
+  position: relative;
+  z-index: 0;
 }
 
