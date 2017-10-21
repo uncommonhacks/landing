@@ -15,9 +15,9 @@ body {
 
 .header {
   font-family: "Beef'd", ChicagoFLF, Krungthep, Silom, monospace;
-  font-size: 400%;
+  font-size: 300%;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   z-index: 100;
 }
@@ -25,8 +25,8 @@ body {
 .side {
   cursor: pointer;
   color: white;
-  height:100%;
-  width:50%;
+  height:45%;
+  width:100%;
   padding: 10% 5%;
   display: flex;
   justify-content: center;
@@ -39,38 +39,38 @@ body {
   left: 0;
   cursor: pointer;
   color: white;
-  height: 100%;
-  width: 50%;
+  height: 45%;
+  width: 100%;
   background: #82EAFF;
   z-index: 1;
 }
 
 #hack-back-side {
   position: absolute;
-  top: 0;
-  left: 50%;
+  top:45%;
+  left:0;
   cursor: pointer;
   color: white;
-  height: 100%;
-  width: 50%;
+  height: 45%;
+  width: 100%;
   background: #FFA373;
   z-index: 1;
 }
 
-#hack-side {
-  float:right;
-  background-color: #A8E479;  
-}
-
 #make-side {
   float:left;
-  background-color: #a37cee;  
+  background-color: #a37cee;
+}
+
+#hack-side {
+  float:right;
+  background-color: #A8E479;
 }
 
 .txt {
   font-family: Montserrat, sans-serif;
   text-align: center;
-  font-size: 200%;
+  font-size: 150%;
   margin-bottom: 2rem;
   font-weight: 400;
   z-index: 100;
@@ -79,7 +79,7 @@ body {
 .info {
   font-family: Montserrat, sans-serif;
   text-align: center;
-  font-size: 150%;
+  font-size: 125%;
   margin-top: 2rem;
   font-weight: 300;
 }
@@ -88,7 +88,7 @@ body {
   font-family: Montserrat, sans-serif;
   text-decoration: none;
   display:inline;
-  font-size: 130%;
+  font-size: 100%;
   font-weight: 300;
   cursor: pointer;
   color: white;
@@ -98,15 +98,15 @@ body {
 
 #nav-bar{
   width: 100%;
-  height: 60px;
+  height: 10%;
   position: fixed;
   bottom: 0;
   left: 0;
   display: flex;
-  background: rgba(0, 0, 0, 0.10);
+  background-color: #A37CEE;
   border-top: solid 1px white;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 20px;
   z-index: 1000;
 }
 
@@ -114,7 +114,7 @@ body {
   border: solid 1px;
   width: 60px;
   text-align: center;
-  margin: 0 auto 3.5rem;
+  margin: 0 auto 2rem;
 }
 
 .social-media {
@@ -145,3 +145,58 @@ body {
   z-index: 0;
 }
 
+@media all and (min-width: 400px) {
+
+  .header {
+    font-size: 400%;
+    margin-top 4rem;
+  }
+
+  .side {
+    height:100%;
+    width:50%;
+  }
+  
+  #make-back-side {
+    height:100%;
+    width:50%;
+  }
+
+  #hack-back-side {
+    top:0;
+    left:50%;
+    height:100%;
+    width:50%;
+  }
+
+  #make-side {
+    float:left;
+  }
+
+  #hack-side {
+    float:right;
+  }
+
+  .txt {
+    font-size:200%;
+  }
+  
+  .info {
+    font-size:150%;
+  }
+
+  .divider {
+    margin: 0 auto 3.5rem;
+  }
+  
+  .nav {
+    font-size:130%;
+  }
+
+  #nav-bar {
+    height:60px;
+    background: rgba(0, 0, 0, 0.10);
+    padding: 0 40px;
+  }
+
+}
