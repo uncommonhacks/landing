@@ -1,7 +1,7 @@
 /* Font */
 @font-face {
   font-family: "Beef'd";
-  src: url("/fonts/Beef'd.ttf");
+  src: url("../fonts/Beef'd.ttf");
 }
 
 html {
