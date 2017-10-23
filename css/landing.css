@@ -5,7 +5,7 @@
 }
 
 body, html {
-  cursor: url('../img/pointer.svg'), auto;
+  /* cursor: url('../img/pointer.svg'), auto; */
 }
 
 html {
@@ -40,7 +40,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  cursor: url('../img/hover.svg'), auto;
+  /* cursor: url('../img/hover.svg'), auto; */
+  cursor: pointer;
   color: white;
   height: 45%;
   width: 100%;
@@ -60,7 +61,7 @@ body {
 }
 
 #make-side {
-  cursor: url('../img/hover.svg'), auto;
+  /* cursor: url('../img/hover.svg'), auto; */
   float:left;
   background-color: #a37cee;
 }
@@ -104,7 +105,7 @@ body {
   display:inline;
   font-size: 100%;
   font-weight: 300;
-  cursor: url('../img/hover.svg'), auto;
+  /* cursor: url('../img/hover.svg'), auto; */
   color: white;
   margin-right: 20px;
 }
@@ -137,7 +138,7 @@ body {
 
 .media {
   height: 30px;
-  cursor: url('../img/hover.svg'), auto;
+  /* cursor: url('../img/hover.svg'), auto; */
 }
 
 .facebook, .twitter, .messenger {
@@ -192,7 +193,7 @@ body {
   }
 
   #make-side {
-    cursor: url('../img/hover.svg'), auto;
+    /* cursor: url('../img/hover.svg'), auto; */
     float:left;
   }
 
