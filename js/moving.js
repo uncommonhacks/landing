@@ -1,5 +1,5 @@
-$(document).ready(function(){    
-  if (screen.width >= 400){
+$(document).ready(function(){
+  if (screen.width >= 700){
     $("#make-side").hover(
       function(){
         $("#make-back-side").slideUp(300);
@@ -21,6 +21,12 @@ $(document).ready(function(){
         $("#hack-back-side").slideDown(300);
       }
     );
+  }
+  else {
+    $("#make-back-side").slideUp(300);
+    $("#make").show(300);
+    $("#hack-back-side").slideUp(300);
+    $("#hack").show(300);
   }
 });
 

@@ -117,7 +117,7 @@ body {
   bottom: 0;
   left: 0;
   display: flex;
-  background-color: #A37CEE;
+  background-color: black;
   border-top: solid 1px white;
   align-items: center;
   padding: 0 20px;
@@ -167,9 +167,45 @@ body {
 .logo {
   font-family: "Beef'd";
   font-size: 1px;
+  display: none;
 }
 
-@media all and (min-width: 400px) {
+/* greater things */ 
+
+.header {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.txt {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.divider {
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-top: 0px;
+  font-size: 16px;
+}
+
+.click-make {
+  border: solid 3px white;
+  margin-top: 15px;
+  padding: 6px 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 200;
+  border-radius: 30px;
+}
+
+/* header, hack-txt, divider, hack, info, click-make */
+
+
+@media all and (min-width: 700px) {
 
   .header {
     font-size: 400%;
@@ -230,6 +266,7 @@ body {
   .logo {
     font-size: 90%;
     margin-right: 30px;
+    display: block;
   }
 
 }
