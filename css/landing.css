@@ -204,8 +204,9 @@ body {
 }
 
 .mini-logoz {
-  height: 17px;
+  height: 13px;
   margin-top: -2px;
+  margin-right: 3px;
 } 
 
 /* header, hack-txt, divider, hack, info, click-make */
