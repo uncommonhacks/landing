@@ -3,10 +3,10 @@ $(document).ready(function(){
     $("#make-side").hover(
       function(){
         $("#make-back-side").slideUp(300);
-        $("#make").show(300);
+        $("#make").slideDown(300);
       },
       function(){
-        $("#make").hide(300);
+        $("#make").slideUp(300);
         $("#make-back-side").slideDown(300);
        }
     );
@@ -14,10 +14,10 @@ $(document).ready(function(){
     $("#hack-side").hover(
       function(){
         $("#hack-back-side").slideUp(300);
-        $("#hack").show(300);
+        $("#hack").slideDown(300);
       },
       function(){
-        $("#hack").hide(300);
+        $("#hack").slideUp(300);
         $("#hack-back-side").slideDown(300);
       }
     );
