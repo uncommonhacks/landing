@@ -164,6 +164,10 @@ body {
   display: none;
 }
 
+.disappear-l{
+  display: none;
+}
+
 /* greater things */ 
 
 .header {
@@ -292,6 +296,12 @@ body {
 
 }
 
+@media (min-width: 925px) {
+  .disappear-l {
+    display: block;
+  }
+}
+
 .click-hack {
   border: none;
   border-radius: 0;
@@ -313,3 +323,4 @@ body {
 .sponsor {
   display: inline-block;
 }
+
