@@ -225,6 +225,11 @@ body {
     font-size: 16px;
   }
 
+  .click-hack {
+    padding: 9px 27px;
+    font-size: 16px;
+  }
+
   .mini-logoz {
     display: none;
   }
@@ -300,24 +305,6 @@ body {
   .disappear-l {
     display: block;
   }
-}
-
-.click-hack {
-  border: none;
-  border-radius: 0;
-  border-bottom: solid 2px black;
-  border-top: solid 2px black;
-  padding: 6px 24px;
-  font-weight: 300;
-  background: black;
-  color: #A8E479;
-  cursor: default;
-  opacity: 0.4;
-}
-
-.click-hack:hover {
-  background: black;
-  color: #A8E479;
 }
 
 .sponsor {
