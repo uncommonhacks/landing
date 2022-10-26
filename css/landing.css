@@ -4,6 +4,8 @@
   src: url("../fonts/Beef'd.ttf");
 }
 
+/* TODO: add color constants, replace them below */
+
 body, html {
   /* cursor: url('../img/pointer.svg'), auto; */
 }

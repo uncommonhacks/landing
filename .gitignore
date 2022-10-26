@@ -4,3 +4,6 @@
 # Editor Files
 *~
 *#
+
+# Local bootstrap distributions
+/bootstrap-5.2.2-dist
