@@ -95,12 +95,9 @@ body {
 .nav {
   font-family: Montserrat, sans-serif;
   text-decoration: none;
-  display:inline;
   font-size: 130%;
   font-weight: 300;
-  /* cursor: url('../img/hover.svg'), auto; */
   color: white;
-  margin-right: 20px;
 }
 
 #nav-bar{
@@ -280,6 +277,7 @@ body {
   
   .nav-item {
     font-size:130%;
+    
   }
 
   .nav-link:link, .nav-link:visited, .nav-link:hover, .nav-link:active {
