@@ -6,19 +6,13 @@
 
 /* TODO: add color constants, replace them below */
 
-body, html {
-  /* cursor: url('../img/pointer.svg'), auto; */
-}
 
-html {
+html, body {
   height: 100%;
-  color: gray;
 }
 
-body {
-  height:100%;
-  background: black;
-}
+/********************************************************************************************/
+/* Main page styling */ 
 
 .header {
   font-family: "Beef'd", ChicagoFLF, Krungthep, Silom, monospace;
@@ -41,9 +35,8 @@ body {
 
 #make-back-side {
   position: absolute;
-  top: 0;
+  top: 0%;
   left: 0;
-  /* cursor: url('../img/hover.svg'), auto; */
   cursor: pointer;
   color: white;
   height: 45%;
@@ -54,7 +47,7 @@ body {
 
 #hack-back-side {
   position: absolute;
-  top:45%;
+  top:50%;
   left:0;
   color: white;
   height: 45%;
@@ -64,7 +57,6 @@ body {
 }
 
 #make-side {
-  /* cursor: url('../img/hover.svg'), auto; */
   float:left;
   background-color: #a37cee;
 }
@@ -92,58 +84,12 @@ body {
   font-weight: 300;
 }
 
-.nav-item {
-  font-family: Montserrat, sans-serif;
-  text-decoration: none;
-  font-size: 130%;
-  font-weight: 300;
-  color: white;
-}
-
-.dropdown-menu {
-  border: none;
-  background-color: rgba(1, 1, 1, 0.1);
-}
-
-.navbar{
-  width: 100%;
-  height: 10%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  background-color: black;
-  border-top: solid 1px white;
-  align-items: center;
-  padding: 0 20px;
-  z-index: 1000;
-}
-
 .divider {
   border: solid 1px;
   width: 60px;
   text-align: center;
   margin: 0 auto 2rem;
 }
-
-.header-links {
-  right: 20px;
-  position: absolute;
-}
-
-.media {
-  height: 30px;
-  /* cursor: url('../img/hover.svg'), auto; */
-}
-
-.facebook, .twitter, .messenger {
-  margin-right: 7px;
-}
-
-.no-underline:link, .no-underline:visited, .no-underline:hover, .no-underline:active {
-  text-decoration: none;
-}
-  
 
 #make, #hack {
   display: none;
@@ -159,41 +105,13 @@ body {
   z-index: 0;
 }
 
-.logo {
-  font-family: "Beef'd";
-  font-size: 1px;
-}
-
-.disappear {
-  display: none;
-}
-
-.disappear-l{
-  display: none;
-}
-
-/* greater things */ 
-
-.header {
-  margin-bottom: 10px;
-  font-size: 30px;
-}
-
-.txt {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.divider {
-  margin-bottom: 10px;
-}
 
 .info {
   margin-top: 0px;
   font-size: 16px; 
 }
 
-.click-make {
+.info-button {
   border: solid 2px white;
   margin-top: 15px;
   padding: 6px 20px;
@@ -207,10 +125,73 @@ body {
   cursor: pointer;
 }
 
-.click-make:hover {
-  background: white;
+.info-button:hover {
   color: #a37cee;
-  transition: color 0.1s ease-in-out, background 0.1s ease-in-out;
+}
+
+/********************************************************************************************/
+/* Navbar styling */
+
+nav{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  background: rgba(0, 0, 0, 0.10);
+  border-top: solid 1px white;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.navbar-nav {
+  right: 20px;
+  background:rgba(0, 0, 0, 0.10);
+  position: absolute;
+  padding: 20px;
+  margin-top: 1em;
+}
+
+.nav-item {
+  font-family: Montserrat, sans-serif;
+  text-decoration: none;
+  font-size: 130%;
+  font-weight: 300;
+  color: white;
+}
+
+.dropdown-menu {
+  border: none;
+  background: none;
+}
+
+a.dropdown-item {
+  color: white;
+}
+
+a.dropdown-item:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.10);
+}
+
+.media {
+  height: 30px;
+}
+
+.facebook, .twitter, .messenger {
+  margin-right: 7px;
+}
+
+.no-underline:link, .no-underline:visited, .no-underline:hover, .no-underline:active {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Beef'd";
+  font-size: 1px;
+}
+
+.disappear {
+  display: none;
 }
 
 .mini-logoz {
@@ -219,10 +200,49 @@ body {
   margin-right: 3px;
 } 
 
-/* header, hack-txt, divider, hack, info, click-make */
+/********************************************************************************************/
+/* Special styling for larger screens only */
 
+@media all and (min-width: 768px) {
 
-@media all and (min-width: 700px) {
+  /********************************************************************/
+  /* Navbar */
+  .navbar-nav {
+    padding: 0;
+    margin-top: 0;
+    background: none;
+  }
+
+  .dropdown-menu{
+    background: rgba(0, 0, 0, 0.10);
+  }
+
+  .mini-logoz {
+    display: none;
+  }
+
+  .nav-item {
+    font-size:130%;
+  }
+
+  a.nav-link:link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active {
+    color: white;
+  }
+
+  .logo {
+    font-size: 90%;
+    margin-right: 30px;
+  }
+
+  .disappear {
+    display:block;
+  }
+
+  /********************************************************************/
+  /* Main page */
+  .header {
+    font-size: 400%;
+  }
 
   .click-make {
     padding: 9px 27px;
@@ -232,14 +252,6 @@ body {
   .click-hack {
     padding: 9px 27px;
     font-size: 16px;
-  }
-
-  .mini-logoz {
-    display: none;
-  }
-
-  .header {
-    font-size: 400%;
   }
 
   .side {
@@ -260,7 +272,6 @@ body {
   }
 
   #make-side {
-    /* cursor: url('../img/hover.svg'), auto; */
     float:left;
   }
 
@@ -278,37 +289,6 @@ body {
 
   .divider {
     margin: 0 auto 2rem;
-  }
-  
-  .nav-item {
-    font-size:130%;
-    
-  }
-
-  a.nav-link:link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active {
-    color: white;
-  }
-
-  .navbar {
-    height:60px;
-    background: rgba(0, 0, 0, 0.10);
-    padding: 0 20px;
-  }
-
-  .logo {
-    font-size: 90%;
-    margin-right: 30px;
-  }
-
-  .disappear {
-    display:block;
-  }
-
-}
-
-@media (min-width: 925px) {
-  .disappear-l {
-    display: block;
   }
 }
 
