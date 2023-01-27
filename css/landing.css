@@ -4,6 +4,7 @@
   src: url("../fonts/Beef'd.ttf");
 }
 
+/* Color variables */
 :root {
   --color_main_one: #a37cee;
   --color_main_two: #89CB58;
@@ -15,22 +16,22 @@
   --dark_transparent: rgba(0, 0, 0, 0.50);
 }
 
-html, body {
-  height: 100%;
-  background: var(--dark_opaque);
-}
-
 /* Animation to make item grow on mouse over, and shrink on mouse leave */
 .grow { 
   transition: all .2s ease-in-out; 
 }
   
 .grow:hover { 
-  transform: scale(1.1); 
+  transform: scale(1.3); 
 }
 
 /********************************************************************************************/
 /* Main page styling */ 
+
+html, body {
+  height: 100%;
+  background: var(--dark_opaque);
+}
 
 .header {
   font-family: "Beef'd", ChicagoFLF, Krungthep, Silom, monospace;
@@ -51,37 +52,42 @@ html, body {
   align-items: center;
 }
 
+/* Background changes color on hover */
 #make-side {
   float:left;
   background-color: var(--color_main_one);
   transition: background-color 1s;
 }
 
-#make-side .info-button {
-  color: var(--color_main_one);
-}
-
 #make-side:hover {
   background-color: var(--color_accent_one);
+}
+
+/* Change text color of info button to match background change */
+#make-side .info-button {
+  color: var(--color_main_one);
+  transition: color 1s;
 }
 
 #make-side:hover .info-button {
   color: var(--color_accent_one);
 }
 
-
+/* Background changes color on hover */
 #hack-side {
   float:right;
   background-color: var(--color_main_two);
   transition: background-color 1s;
 }
 
-#hack-side .info-button {
-  color: var(--color_main_two);
-}
-
 #hack-side:hover {
   background-color: var(--color_accent_two);
+}
+
+/* Change text color of info button to match background change */
+#hack-side .info-button {
+  color: var(--color_main_two);
+  transition: color 1s;
 }
 
 #hack-side:hover .info-button {
@@ -102,7 +108,7 @@ html, body {
   font-family: Montserrat, sans-serif;
   text-align: center;
   font-size: 125%;
-  margin-top: 2rem;
+  margin-top: 0px;
   font-weight: 300;
 }
 
@@ -111,11 +117,6 @@ html, body {
   width: 60px;
   text-align: center;
   margin: 0 auto 2rem;
-}
-
-.info {
-  margin-top: 0px;
-  font-size: 16px; 
 }
 
 .info-button {
@@ -130,12 +131,6 @@ html, body {
   border-radius: 30px;
   background: var(--color_detail);
   cursor: pointer;
-  transition: all .2s ease-in-out; 
-}
-
-
-.info-button:hover {
-  transform: scale(1.4); 
 }
 
 /********************************************************************************************/
@@ -240,6 +235,7 @@ a.dropdown-item:hover {
   nav {
     height: 10%;
   }
+
   /* Make/Hack become vertical on smaller screens */
   .side {
     position: absolute;
@@ -263,7 +259,6 @@ a.dropdown-item:hover {
 /* Special styling for larger screens only */
 
 @media all and (min-width: 768px) {
-
   /********************************************************************/
   /* Navbar */
   .navbar-nav {
@@ -355,4 +350,3 @@ a.dropdown-item:hover {
 .sponsor {
   display: inline-block;
 }
-
