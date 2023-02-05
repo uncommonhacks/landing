@@ -13,7 +13,8 @@
   --color_detail: #FFFFFF;
 
   --dark_opaque: #000;
-  --dark_transparent: rgba(0, 0, 0, 0.50);
+  --dark_transparent: rgba(0, 0, 0, 0.60);
+  --dark_foggy: rgba(0, 0, 0, 0.69);
 }
 
 /* Animation to make item grow on mouse over, and shrink on mouse leave */
@@ -147,7 +148,7 @@ nav {
 
 .navbar-nav {
   right: 20px;
-  background:var(--dark_transparent);
+  background:var(--dark_foggy);
   position: absolute;
   padding: 20px;
   margin-top: 1em;
@@ -211,7 +212,7 @@ a.dropdown-item:hover {
 }
 
 .modal-body a:hover {
-  color: rgb(128, 128, 128);
+  color: var(--color_accent_one);
 }
 
 .social-media-img {
