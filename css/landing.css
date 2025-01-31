@@ -7,9 +7,9 @@
 /* Color variables */
 :root {
   --color_main_one: #a37cee;
-  --color_main_two: #89CB58;
+  --color_main_two: #0c0c0c;
   --color_accent_one: #45C2DD;
-  --color_accent_two: #FFA373;
+  --color_accent_two: #636163;
   --color_detail: #FFFFFF;
 
   --dark_opaque: #000;
@@ -252,7 +252,7 @@ a.dropdown-item:hover {
   }
 
   #hack-side {
-    top: 55%;
+    top: 25%;
   }
 }
 
@@ -312,19 +312,19 @@ a.dropdown-item:hover {
 
   .side {
     height: 100%;
-    width:50%;
+    /* width:50%; */
   }
   
   #make-back-side {
     height:100%;
-    width:50%;
+    /* width:50%; */
   }
 
   #hack-back-side {
     top:0;
     left:50%;
     height:100%;
-    width:50%;
+    /* width:50%; */
   }
 
   #make-side {
