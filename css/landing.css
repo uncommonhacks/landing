@@ -241,7 +241,7 @@ a.dropdown-item:hover {
   .side {
     position: absolute;
     left: 0;
-    height:45%;
+    height:100%;
     width:100%;
     z-index:1;
     font-size: 60%;
@@ -252,7 +252,7 @@ a.dropdown-item:hover {
   }
 
   #hack-side {
-    top: 25%;
+    top: 0%;
   }
 }
 
