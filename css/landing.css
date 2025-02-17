@@ -254,6 +254,11 @@ a.dropdown-item:hover {
   #hack-side {
     top: 0%;
   }
+
+  #mlh-trust-badge {
+    right: 80px !important;
+  }
+
 }
 
 /********************************************************************************************/
@@ -279,6 +284,10 @@ a.dropdown-item:hover {
 
   .nav-item {
     font-size:130%;
+  }
+
+  .nav-item:last-child {
+    margin-right: 8em;
   }
 
   a.nav-link:link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active {
