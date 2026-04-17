@@ -77,12 +77,12 @@ html, body {
 /* Background changes color on hover */
 #hack-side {
   float:right;
-  background-color: var(--color_main_two);
+  background-color: rgba(12, 12, 12, 0.45);
   transition: background-color 1s;
 }
 
 #hack-side:hover {
-  background-color: var(--color_accent_two);
+  background-color: rgba(99, 97, 99, 0.45);
 }
 
 /* Change text color of info button to match background change */
