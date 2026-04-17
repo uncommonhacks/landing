@@ -104,27 +104,6 @@ html, body {
   transform: translateY(0%);
 }
 
-#site-footer {
-  position: fixed;
-  bottom: 12px;
-  left: 20px;
-  z-index: 10000;
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
-}
-
-#site-footer a {
-  color: var(--color_detail);
-  text-decoration: none;
-  opacity: 0.75;
-  transition: opacity 0.2s;
-}
-
-#site-footer a:hover {
-  opacity: 1;
-  text-decoration: underline;
-}
-
 /* White box with black text for readability over the photo */
 #hack-side .info-button {
   color: var(--color_main_two);
