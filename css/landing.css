@@ -31,7 +31,7 @@
 
 html, body {
   height: 100%;
-  background: var(--dark_opaque);
+  background: var(--dark_opaque) url("../img/IMG_0240.jpg") center center / cover no-repeat fixed;
 }
 
 .header {
