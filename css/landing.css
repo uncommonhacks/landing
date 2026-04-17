@@ -82,7 +82,7 @@ html, body {
 }
 
 #hack-side:hover {
-  background-color: rgba(99, 97, 99, 0.45);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Change text color of info button to match background change */
