@@ -101,7 +101,7 @@ html, body {
 }
 
 #hack-side > .info-wrapper {
-  transform: translateY(5%);
+  transform: translateY(12%);
 }
 
 #site-footer {
@@ -125,14 +125,16 @@ html, body {
   text-decoration: underline;
 }
 
-/* Change text color of info button to match background change */
+/* White box with black text for readability over the photo */
 #hack-side .info-button {
   color: var(--color_main_two);
-  transition: color 1s;
+  background-color: var(--color_detail);
+  transition: color 1s, background-color 1s;
 }
 
 #hack-side:hover .info-button {
-  color: var(--color_accent_two);
+  color: var(--color_main_two);
+  background-color: var(--color_detail);
 }
 
 .txt {
