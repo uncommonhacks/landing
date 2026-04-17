@@ -100,6 +100,10 @@ html, body {
   z-index: 1;
 }
 
+#hack-side > .info-wrapper {
+  transform: translateY(-8%);
+}
+
 #site-footer {
   position: fixed;
   bottom: 12px;
@@ -123,12 +127,12 @@ html, body {
 
 /* Change text color of info button to match background change */
 #hack-side .info-button {
-  color: var(--color_main_two);
+  color: var(--color_detail);
   transition: color 1s;
 }
 
 #hack-side:hover .info-button {
-  color: var(--color_accent_two);
+  color: var(--color_detail);
 }
 
 .txt {
@@ -146,7 +150,7 @@ html, body {
   text-align: center;
   font-size: 125%;
   margin-top: 0px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .divider {
