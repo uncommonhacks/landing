@@ -101,7 +101,7 @@ html, body {
 }
 
 #hack-side > .info-wrapper {
-  transform: translateY(-8%);
+  transform: translateY(5%);
 }
 
 #site-footer {
@@ -127,12 +127,12 @@ html, body {
 
 /* Change text color of info button to match background change */
 #hack-side .info-button {
-  color: var(--color_detail);
+  color: var(--color_main_two);
   transition: color 1s;
 }
 
 #hack-side:hover .info-button {
-  color: var(--color_detail);
+  color: var(--color_accent_two);
 }
 
 .txt {
