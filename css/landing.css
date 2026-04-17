@@ -100,6 +100,27 @@ html, body {
   z-index: 1;
 }
 
+#site-footer {
+  position: fixed;
+  bottom: 12px;
+  left: 20px;
+  z-index: 10000;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+}
+
+#site-footer a {
+  color: var(--color_detail);
+  text-decoration: none;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+
+#site-footer a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 /* Change text color of info button to match background change */
 #hack-side .info-button {
   color: var(--color_main_two);
