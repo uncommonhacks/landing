@@ -31,7 +31,7 @@
 
 html, body {
   height: 100%;
-  background: var(--dark_opaque) url("../img/IMG_0240.jpg") center center / cover no-repeat fixed;
+  background: var(--dark_opaque);
 }
 
 .header {
@@ -77,12 +77,27 @@ html, body {
 /* Background changes color on hover */
 #hack-side {
   float:right;
-  background-color: rgba(12, 12, 12, 0.45);
-  transition: background-color 1s;
+  position: relative;
+  background: url("../img/IMG_0240.jpg") center center / cover no-repeat;
 }
 
-#hack-side:hover {
+#hack-side::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(12, 12, 12, 0.45);
+  transition: background-color 1s;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#hack-side:hover::before {
   background-color: rgba(0, 0, 0, 0);
+}
+
+#hack-side > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* Change text color of info button to match background change */
