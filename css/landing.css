@@ -308,7 +308,7 @@ a.dropdown-item:hover {
   }
 
   .nav-item:last-child {
-    margin-right: 8em;
+    margin-right: 1em;
   }
 
   a.nav-link:link, a.nav-link:visited, a.nav-link:hover, a.nav-link:active {
