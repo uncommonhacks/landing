@@ -101,7 +101,7 @@ html, body {
 }
 
 #hack-side > .info-wrapper {
-  transform: translateY(0%);
+  transform: translateY(-10%);
 }
 
 #site-footer {
